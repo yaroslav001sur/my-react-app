@@ -1,24 +1,22 @@
-//Модуль 3, задание 1
-import React from 'react';
-import Message from './components/Message';
-import Layout from './components/Layout/Layout';
-import Home from './pages/Home/Home';
+import Layout from './components/Layout';
+import Hero from './components/Hero/Hero';
+import Quote from './components/Quote/Quote';
+import Info from './components/Info/Info';
+import Connect from './components/Connect/Connect';
+import Slider from './components/Slider/Slider';
+import Cta from './components/Cta/Cta';
 
-const App: React.FC = () => {
-  const messageText = 'Привет, это сообщение из пропса!';
-  
-  return (
-    <div>
-      <h1>Моё приложение на Vite + React + TypeScript</h1>
-      <Message text={messageText} />
-    </div>
-  );
-};
-function App() {
+const App = () => {
   return (
     <Layout>
-      <Home />
+      <Hero />
+      <Quote />
+      <Info />
+      <Connect />
+      <Slider/>
+      <Cta />
     </Layout>
   );
-}
+};
+
 export default App;

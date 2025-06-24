@@ -1,16 +1,16 @@
-import styles from './Header.module.css';
+import './Header.module.css';
 
 const Header = () => {
   return (
-    <header className={styles.header}>
-      <div className={styles['header__content']}>
-        <div className={styles['header__logo']}>
-          <img src="/img/logo.svg" alt="Jobly Logo" className={styles['header__logo-img']} />
+    <header className="header">
+      <div className="header__content">
+        <div className="header__logo">
+          <img className="header__logo-img" alt="Jobly Logo" src="/img/logo.svg" />
         </div>
-        <nav className={styles['header__nav']}>
-          <a href="#" className={styles['header__nav-link']}>For Recruiters</a>
-          <a href="#" className={`${styles['header__nav-link']} ${styles['header__nav-link--sign-up']}`}>Sign Up</a>
-          <a href="#" className={`${styles['header__nav-link']} ${styles['header__nav-link--log-in']}`}>Log in</a>
+        <nav className="header__nav">
+          <a href="#" className="header__nav-link">For Recruiters</a>
+          <a href="#" className="header__nav-link header__nav-link--sign-up">Sign Up</a>
+          <a href="#" className="header__nav-link header__nav-link--log-in">Log in</a>
         </nav>
       </div>
     </header>

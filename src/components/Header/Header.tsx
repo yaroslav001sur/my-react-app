@@ -8,9 +8,9 @@ const Header = () => {
           <img src="/img/logo.svg" alt="Jobly Logo" className={styles['header__logo-img']} />
         </div>
         <nav className={styles['header__nav']}>
-          <a href="#" className={styles['header__nav-link']}>For Recruiters</a>
-          <a href="#" className={`${styles['header__nav-link']} ${styles['header__nav-link--sign-up']}`}>Sign Up</a>
-          <a href="#" className={`${styles['header__nav-link']} ${styles['header__nav-link--log-in']}`}>Log in</a>
+          <a href="#" className={styles['header__nav-link']}>Для студентов</a>
+          <a href="#" className={`${styles['header__nav-link']} ${styles['header__nav-link--sign-up']}`}>Войти</a>
+          <a href="#" className={`${styles['header__nav-link']} ${styles['header__nav-link--log-in']}`}>Зарегестрироваться</a>
         </nav>
       </div>
     </header>

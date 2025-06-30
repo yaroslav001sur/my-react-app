@@ -3,10 +3,9 @@ import styles from './Slider.module.css';
 const Slider = () => {
   return (
     <section className={styles.slider}>
-      <h3 className={styles['slider__title']}>Connect With Slider</h3>
+      <h3 className={styles['slider__title']}>Наши курсы</h3>
       <p className={styles['slider__text']}>
-        Get instant access to a curated pool of top creative & tech talent actively seeking their next role. Find highly qualified job!
-      </p>
+        Выбирайте из десятков курсов по веб-разработке, мобильным приложениям, машинному обучению и другим направлениям.</p>
       <div className={styles['swiper-wrapper-container']}>
         <div className={styles['swiper-button'] + ' ' + styles['swiper-button-prev']}></div>
         <div className={styles['swiper-container']}>

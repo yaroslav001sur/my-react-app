@@ -4,11 +4,11 @@ const Connect = () => {
   return (
     <section className={styles.connect}>
       <div className={styles['connect__content']}>
-        <img src="/img/connect-image.png" alt="Connect Image" className={styles['connect__image']} />
+        <img src="/img/connect-image.png" alt="Студент и преподаватель" className={styles['connect__image']} />
         <div className={styles['connect__text']}>
-          <h3 className={styles['connect__title']}>Connect With Recruiter</h3>
+          <h3 className={styles['connect__title']}>Обучение с преподавателем</h3>
           <p className={styles['connect__description']}>
-            Get instant access to a curated pool of top creative & tech talent actively seeking their next role. Find highly qualified job!
+            Получите доступ к сообществу студентов и преподавателей. Задавайте вопросы, обсуждайте проекты и получайте обратную связь.
           </p>
         </div>
       </div>

@@ -14,7 +14,6 @@ const HomePage: React.FC = () => {
       <Quote />
       <Info />
       <div className="cards-section">
-        <h2>Популярные карточки</h2>
         <CardList limit={3} />
       </div>
       <Connect />

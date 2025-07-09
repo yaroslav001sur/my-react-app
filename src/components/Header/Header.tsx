@@ -1,7 +1,11 @@
 import styles from './Header.module.css';
 import { Link } from 'react-router-dom';
+import React, { useState } from 'react';
+import Modal from '../Modal/Modal';
 
 const Header = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
   return (
     <header className={styles.header}>
       <div className={styles['header__content']}>
@@ -13,14 +17,26 @@ const Header = () => {
         <nav className={styles['header__nav']}>
           <Link to="/" className={styles['header__nav-link']}>Для студентов</Link>
           <Link to="/cards" className={styles['header__nav-link']}>Карточки</Link>
-          <Link to="/login" className={`${styles['header__nav-link']} ${styles['header__nav-link--log-in']}`}>
+
+          <button 
+            onClick={() => setIsModalOpen(true)} 
+            className={`${styles['header__nav-link']} ${styles['header__nav-link--log-in']}`}
+            type="button"
+          >
             Войти
-          </Link>
-          <Link to="/signup" className={`${styles['header__nav-link']} ${styles['header__nav-link--sign-up']}`}>
+          </button>
+
+          <button 
+            onClick={() => setIsModalOpen(true)} 
+            className={`${styles['header__nav-link']} ${styles['header__nav-link--sign-up']}`}
+            type="button"
+          >
             Зарегистрироваться
-          </Link>
+          </button>
         </nav>
       </div>
+
+      {isModalOpen && <Modal onClose={() => setIsModalOpen(false)} />}
     </header>
   );
 };
